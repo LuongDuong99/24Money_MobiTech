@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>24 Monney</title>
+</head>
+
+<body>
+    <div class="app">
+        <a href="#home" class="btn-go-home">
+            <i class="fa-solid fa-angle-up frist-page-btn"></i>
+        </a>
+        <div class="left"></div>
+        <div   id="home" class="MT-24Moneny">
+            <header class="header">
+                <div class="grid mobile-tablet">
+                    <div class="app-header">
+                        <input type="checkbox" hidden id="nav__input">
+                        <label for="nav__input" class="nav__overlay">f
+                        </label>
+                        <nav class="nav__mobile">
+                            <div class="nav__mobile-list">
+                                <!-- <div class="menu-dialog-header">
+                                    <div class="user-info-container">
+                                        <div class="user-avatar">
+                                            <div class="avatar-el" style="width: 80px; height: 80px;"><img
+                                                    data-src="/ssr-img/default-image/avatar.png"
+                                                    src="/ssr-img/default-image/avatar.png" lazy="loaded">
+                                            </div>
+                                        </div>
+                                        <div class="user-info">
+                                            <p class="user-name">Dương</p>
+                                            <p class="phone-number">+84337416768</p>
+                                            <div class="my-page-button"><span class="text">Vào trang cá nhân</span> <img
+                                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNSAyNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjUgMjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMUExQTFBO30KPC9zdHlsZT4KPGcgaWQ9Ikdyb3VwXzQ5NDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguNjM4IDAuNzA3KSByb3RhdGUoOTApIj4KCTxnIGlkPSJQYXRoXzMwNzQzIj4KCQk8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjExLjgsLTEyIDI0LjMsMC41IDIwLjUsNC4zIDExLjgsLTQuNCAzLjEsNC4zIC0wLjcsMC41IAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="
+                                                    alt="" class="icon"></div>
+                                        </div>
+                                        <div class="user-action-list">
+                                            <div class="user-action-list-item"><img
+                                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOC43IDE4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOC43IDE4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzcwNzA3MDt9Cgkuc3Qxe2ZpbGw6I0UxQkIwMDt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggaWQ9IlN1YnRyYWN0aW9uXzQwIiBjbGFzcz0ic3QwIiBkPSJNMTAuMiwxNy41aC03Yy0xLjcsMC0zLTEuMy0zLTN2LTExYzAtMS43LDEuMy0zLDMtM2g3YzEuNywwLDMsMS4zLDMsM3YxaC0xdi0xCgkJYzAtMS4xLTAuOS0yLTItMmgtN2MtMS4xLDAtMiwwLjktMiwydjExYzAsMS4xLDAuOSwyLDIsMmg3YzEuMSwwLDItMC45LDItMmgxQzEzLjIsMTYuMiwxMS45LDE3LjUsMTAuMiwxNy41eiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE4LjMsOC44bC0yLjYtMi42QzE1LjUsNiwxNS4yLDYsMTUsNi4xYy0wLjIsMC4yLTAuMiwwLjUsMCwwLjdsMS44LDEuOGgtOWMtMC4zLDAtMC41LDAuMi0wLjUsMC41CgkJczAuMiwwLjUsMC41LDAuNWg4LjlMMTUsMTEuNGMtMC4yLDAuMi0wLjIsMC41LDAsMC43YzAuMSwwLjEsMC4yLDAuMSwwLjQsMC4xYzAuMSwwLDAuMywwLDAuNC0wLjFsMi42LTIuNgoJCUMxOC41LDkuMywxOC41LDksMTguMyw4Ljh6Ii8+CjwvZz4KPC9zdmc+Cg=="
+                                                    alt="" class="icon"> <span class="text">LOGOUT</span></div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="bulk-head" style="height: 5px;"></div>
+                                <ul>
+                                    <li>
+                                        <a href="/book-categories/sach-moi" class="menu-dialog-item"
+                                            title="Sách Best Seller">
+                                            <div class="item-text">
+                                                <p>Sách Best Seller</p>
+                                                <!-- <span class="icon-new">Mới</span> -->
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="/users/post" class="menu-dialog-item" title="Đăng bài viết của bạn">
+                                            <div class="item-text">
+                                                <p>Đăng bài viết của bạn</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/tin-moi" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Bài mới nhất</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/tin-hot" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Hot</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/chuyen-gia" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Kênh chuyên gia</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/chung-khoan" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Đầu tư chứng khoán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/ky-nang" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Kỹ năng</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/bat-dong-san" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Đầu tư bất động sản</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/tai-chinh" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Đầu tư tài chính</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/kinh-doanh" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Kinh doanh</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/tin-quoc-te" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Sự kiện quốc tế</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/kinh-te-vi-mo" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Kinh tế vĩ mô</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/hang-hoa" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Đầu tư hàng hóa</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/phap-luat" class="menu-dialog-item" title="item.name">
+                                            <div class="item-text">
+                                                <p>Pháp luật</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/v2/stock-game/rankings" class="menu-dialog-item"
+                                            title="Chơi game chứng khoán">
+                                            <div class="item-text">
+                                                <p>Đầu tư chứng khoán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/v2/alerts" class="menu-dialog-item" title="Cảnh báo chứng khoán">
+                                            <div class="item-text">
+                                                <p>Cảnh báo chứng khoán</p> <span class="icon-new">Mới</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/companies?from=left-menu" class="menu-dialog-item"
+                                            title="Doanh nghiệp A-Z">
+                                            <div class="item-text">
+                                                <p>Doanh nghiệp A-Z</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/wiki" class="menu-dialog-item" title="Thuật ngữ">
+                                            <div class="item-text">
+                                                <p>Từ điển kinh tế</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/charts/all?symbol=VN-INDEX" class="menu-dialog-item"
+                                            title="Phân tích kỹ thuật">
+                                            <div class="item-text">
+                                                <p>Phân tích kỹ thuật</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/financial-reports" class="menu-dialog-item" title="Báo cáo tài chính">
+                                            <div class="item-text">
+                                                <p>Báo cáo tài chính</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/topic/digital-marketing-t1350425a0.html" class="menu-dialog-item"
+                                            title="Digital Marketing">
+                                            <div class="item-text">
+                                                <p>Digital Marketing</p>
+                                            </div>
+                                        </a></li>
+                                    <li>
+                                        <div class="menu-dialog-item">
+                                            <div class="item-text">
+                                                <p>Lịch Cát Tường (Lịch âm)</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu-dialog-item">
+                                            <div class="item-text">
+                                                <p>Cung hoàng đạo</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="/topic/huong-dan-su-dung-app-24hmoney-t1012905a0.html"
+                                            class="menu-dialog-item" title="hướng dẫn sử dụng app 24hmoney">
+                                            <div class="item-text">
+                                                <p>Hướng dẫn sử dụng</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="https://24hmoney.vn/policy.html" title="Chính sách bảo mật"
+                                            class="menu-dialog-item">
+                                            <div class="item-text">
+                                                <p>Chính sách bảo mật</p>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="nav-1 ml-16">
+                            <label for="nav__input" class="fa-solid fa-bars header__nav-icon menu-icon"></label>
+                            <a href="/" class="header__nav-icon logo-icon">
+                                <b>24HMONEY</b>
+                            </a>
+                        </div>
+                        <div class="custom-nav mr-16">
+                            <i class="fa-solid fa-bell header__nav-icon notification-icon "></i>
+                            <a href="/" class="header__nav-icon post-button hide-on-mobile-small">
+                                <i class="fa-regular fa-pen-to-square header__nav-icon "></i>
+                                <span>Viết Bài</span>
+                            </a>
+                            <a href="/" class="header__nav-search-input-wrap hide-on-mobile-small">
+                                <i class="header__nav-search-btn-icon fas fa-search header__nav-icon"></i>
+                                <input type="text" class="header__nav-search-input hide-on-mobile"
+                                    placeholder="Tìm mã CK, công ty, tin tức">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <main class="grid mobile-tablet">
+                <div class="my-stock-box">
+                    <div class="main-header">
+                        <div class="ss1">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Xem mã theo dõi</span>
+                        </div>
+                        <div class="ss2">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            <span>Tùy Chỉnh</span>
+                        </div>
+                    </div>
+                    <div class="row no-gutters stock-item-wrap">
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change u">+30 (+.40%)</div>
+                        </div>
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change e">+30 (+.40%)</div>
+                        </div>
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change e">+30 (+.40%)</div>
+                        </div>
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change e">+30 (+.40%)</div>
+                        </div>
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change e">+30 (+.40%)</div>
+                        </div>
+                        <div class="stock-item c-2 m-2 l-2 ">
+                            <div class="code">VHM</div>
+                            <div class="price">75.90</div>
+                            <div class="change e">+30 (+.40%)</div>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="categroy-list">
+                    <li class=" tab-item"><span>MỚI</span></li>
+                    <li class="tab-item active"><span>HOT</span></li>
+                    <li class="tab-item"><span>TRANG CÁ NHÂN</span></li>
+                </ul>
+                <ul class=" categroy-list-chart">
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div>
+                                    <span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume"><span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div><span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume"><span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div><span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume"><span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div><span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume"><span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div><span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume"><span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="chart-item c-4 m-3 l-3">
+                        <div>
+                            <a href="/indices/vn-index" title="VN-INDEX"><img alt="Biểu đồ VN-INDEX"
+                                    data-src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png"
+                                    src="https://24hmoney.vn/img_chart/charts/graph_1d_floor_10.png" lazy="loaded">
+                                <div class="code">
+                                    <i class="fa-solid fa-clock-rotate-left d "></i>
+                                    <span>VN-INDEX</span>
+                                </div>
+                                <div><span class="price">1,370.21</span>
+                                    <span class="change d">-14.51 (-1.05%)</span>
+                                </div>
+                                <div class="volume">
+                                    <span class="number">810,673,733</span><span class="unit">CP</span>
+                                    <span class="number">23,787</span><span class="unit">tỷ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div>
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane">
+                            <h2>Tin Mới</h2>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="Thạch Thảo" class="">
+                                            <div class="avatar-el"><img alt="Thạch Thảo"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-11/tai-anh-gai-dep-girl-xinh-cho-dien-thoai-08-1554966298-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                Thạch Thảo
+                                            </a>
+                                            <p class="post-time">2 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/" title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        class="title">Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái
+                                        phiếu</a>
+                                </header> <a href="/"
+                                    title="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                    class="thumb"><img
+                                        alt="Tân Hoàng Minh đợi hướng dẫn trả tiền khách hàng mua trái phiếu"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-21/upload/e9gdnzvhdfi8lzswc6uba/files/2022/04/thm-5422a-width698height391.jpg"
+                                        lazy="loaded"></a>
+                                <div class="description">
+                                    <p>
+                                        Tập đoàn Tân Hoàng Minh vừa có thông báo về việc tiếp nhận thông tin khách
+                                        hàng
+                                        liên quan tới hợp đồng trái phiếu.
+                                        <a href="/news/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+
+
+                        </div>
+                        <div class="tab-pane active">
+                            <h2>Tin Hot</h2>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="An Bang" class="">
+                                            <div class="avatar-el">
+                                                <img alt="An Bang"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                An Bang
+                                            </a>
+                                            <p class="post-time">1 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/"
+                                        title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        class="title">CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ
+                                        phiếu NBB</a>
+                                </header>
+                                <a href="/"
+                                    title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                    class="thumb"><img
+                                        alt="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        lazy="loaded">
+                                </a>
+
+                                <div class="description">
+                                    <p>
+                                        Doanh thu thuần quý này đạt 711,7 tỷ đồng, giảm 26,1% so với cùng kỳ năm
+                                        trước.
+                                        <a href="/news/cii-bao-lai-rong-dot-bien-gan-650-ty-dong-trong-quy-i-do-ban-co-phieu-nbb-c1a1435882.html?fromSocialUi=1"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="An Bang" class="">
+                                            <div class="avatar-el">
+                                                <img alt="An Bang"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                An Bang
+                                            </a>
+                                            <p class="post-time">1 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/"
+                                        title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        class="title">CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ
+                                        phiếu NBB</a>
+                                </header>
+                                <a href="/"
+                                    title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                    class="thumb"><img
+                                        alt="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        lazy="loaded">
+                                </a>
+
+                                <div class="description">
+                                    <p>
+                                        Doanh thu thuần quý này đạt 711,7 tỷ đồng, giảm 26,1% so với cùng kỳ năm
+                                        trước.
+                                        <a href="/news/cii-bao-lai-rong-dot-bien-gan-650-ty-dong-trong-quy-i-do-ban-co-phieu-nbb-c1a1435882.html?fromSocialUi=1"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="An Bang" class="">
+                                            <div class="avatar-el">
+                                                <img alt="An Bang"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                An Bang
+                                            </a>
+                                            <p class="post-time">1 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/"
+                                        title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        class="title">CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ
+                                        phiếu NBB</a>
+                                </header>
+                                <a href="/"
+                                    title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                    class="thumb"><img
+                                        alt="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        lazy="loaded">
+                                </a>
+
+                                <div class="description">
+                                    <p>
+                                        Doanh thu thuần quý này đạt 711,7 tỷ đồng, giảm 26,1% so với cùng kỳ năm
+                                        trước.
+                                        <a href="/news/cii-bao-lai-rong-dot-bien-gan-650-ty-dong-trong-quy-i-do-ban-co-phieu-nbb-c1a1435882.html?fromSocialUi=1"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+                            <article class="article-item-u">
+                                <div class="article-header">
+                                    <div class="provider">
+                                        <a href="/" title="An Bang" class="">
+                                            <div class="avatar-el">
+                                                <img alt="An Bang"
+                                                    data-src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    src="https://cdn24hmoney.24hstatic.com/upload/images/2019-2/enduser_avartar/2019-04-19/download-1555683213-width300height200.jpg"
+                                                    lazy="loaded">
+                                            </div>
+                                        </a>
+                                        <div class="user-info">
+                                            <a href="/" title="Thạch Thảo" class="user-name">
+                                                An Bang
+                                            </a>
+                                            <p class="post-time">1 giờ</p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="v-popover">
+                                            <div class="trigger">
+                                                <div class="article-quick-actions-main-button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <header>
+                                    <a href="/"
+                                        title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        class="title">CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ
+                                        phiếu NBB</a>
+                                </header>
+                                <a href="/"
+                                    title="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                    class="thumb"><img
+                                        alt="CII báo lãi ròng đột biến gần 650 tỷ đồng trong quý I do bán cổ phiếu NBB"
+                                        data-src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        src="https://cdn24hmoney.24hstatic.com/upload/images_cr/2022-04-22/2022/04/22/image202203311633301-1650567049_600x400-width698height391.jpg"
+                                        lazy="loaded">
+                                </a>
+
+                                <div class="description">
+                                    <p>
+                                        Doanh thu thuần quý này đạt 711,7 tỷ đồng, giảm 26,1% so với cùng kỳ năm
+                                        trước.
+                                        <a href="/news/cii-bao-lai-rong-dot-bien-gan-650-ty-dong-trong-quy-i-do-ban-co-phieu-nbb-c1a1435882.html?fromSocialUi=1"
+                                            class="view-more">...Xem thêm</a>
+                                    </p>
+                                </div>
+                                <div class="tag-symbols-box">
+                                    <!---->
+                                </div>
+                                <div class="article-item-actions">
+                                    <div class="no-list">
+                                        <div class="no-item">
+                                            <span>
+                                                10 Yêu thích
+                                            </span>
+                                        </div>
+                                        <div class="no-item">
+                                            <a href="/" rel="nofollow" class="link">
+                                                1 Bình luận
+                                            </a>
+                                            <span>1 Chia sẻ</span>
+                                        </div>
+                                    </div>
+                                    <div class="actions-box">
+                                        <div class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-heart "></i>
+                                            <i class="fa-solid fa-heart d" style="display:none;"></i>
+                                            <span>Thích</span>
+                                        </div>
+                                        <a href="/" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://24hmoney.vn/posts/tan-hoang-minh-doi-huong-dan-tra-tien-khach-hang-mua-trai-phieu-c4a1435411.html&amp;display=popup&amp;ref=plugin"
+                                            target="_blank" rel="nofollow" class="action-btn l-4 c-4 m-4">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bulk-head"></div>
+
+                        </div>
+                        <div class="tab-pane">
+                            <h2>Trang Cá Nhân</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere vitae pariatur, non
+                                minima libero omnis, animi perferendis totam beatae, nostrum ut tenetur saepe.
+                                Quidem
+                                delectus quis maxime veritatis accusantium tempore.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="right"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+:root {
+  --header-height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Roboto, -apple-system, "Source Sans Pro", BlinkMacSystemFont,
+    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.ml-mr-10 {
+  margin: 0 10px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mobile-tablet {
+  max-width: 76.8rem;
+  margin: 0 auto;
+}
+.bulk-head {
+  width: 100%;
+  height: 8px;
+  background-color: #e7eaee;
+}
+.d {
+  color: #ff2a4e;
+}
+.e {
+  color: #e1bb00;
+}
+.u {
+  color: #60d140;
+}
